@@ -3,136 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Busschers AI - AI-Driven Solutions for Your Business</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Busschers AI - Freelancer</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto; /* This centers vertically and horizontally */
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+        }
+
+
+        .logo-container {
+            text-align: center;
+            margin: 50px 0;
+            padding: 0 min(5%, 50px); /* Ensures minimum 50px padding */
+        }
+
+        .logo {
+            width: 90%;
+            max-width: 500px;
+            border-radius: 15px;
+            height: auto;
+            margin: 0 auto;
+            display: block;
+            object-fit: contain;
+        }
+
+        .content {
+            text-align: center;
+            margin-bottom: 40px;
+            width: 500px; /* Match with displayed logo width */
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .button1 {
+            background-color: #632024;
+            color: white;
+        }
+
+        .button2 {
+            background-color: #6271a0;
+            color: white;
+        }
+        
+        /* Background styling */
+        #vanta-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Place behind content */
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                width: 100%;
+                max-width: calc(100% - 100px); /* 50px padding on both sides */
+                border-radius: 15px; /* Maintain rounded corners */
+            }
+            
+            body {
+                padding-left: min(5%, 50px);
+                padding-right: min(5%, 50px);
+            }
+        }
+        
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="logo.png" alt="Busschers AI Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <!-- Vanta.js background container -->
+    <div id="vanta-background"></div>
+    
+    <div class="container">
+        <div class="logo-container">
+            <img src="logo.png" alt="Busschers AI Logo" class="logo">
         </div>
-    </header>
-
-    <section id="home">
-        <div class="hero">
-            <h1>Busschers AI</h1>
-            <p>Innovative AI-Driven Solutions for Businesses of Tomorrow</p>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Busschers AI</h2>
-            <p>
-                At Busschers AI, we provide cutting-edge artificial intelligence services to help businesses 
-                leverage the power of AI in their operations. Whether you're looking to optimize internal processes, 
-                create intelligent customer-facing solutions, or generate valuable insights through AI-driven analytics, 
-                we can help. As a skilled AI Engineer with experience in diverse AI solutions, our founder, Marcél Busschers, 
-                offers services tailored to your company's needs.
-            </p>
-        </div>
-    </section>
-
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-list">
-                <div class="service-item">
-                    <h3>AI-Driven Market Analytics</h3>
-                    <p>
-                        Analyze market trends and data with AI to uncover valuable insights that inform strategic decisions. 
-                        Our AI models can process vast amounts of data to give your business a competitive edge.
-                    </p>
-                </div>
-                <div class="service-item">
-                    <h3>AI-Powered Chatbots</h3>
-                    <p>
-                        Build intelligent chatbots that improve customer service, automate responses, and enhance engagement.
-                        Whether for customer service or internal communication, our AI-driven bots are designed to adapt and 
-                        improve over time.
-                    </p>
-                </div>
-                <div class="service-item">
-                    <h3>Custom AI Solutions</h3>
-                    <p>
-                        Tailor-made AI systems for businesses with unique needs. From automation tools to AI-driven predictions, 
-                        we develop bespoke AI solutions that optimize workflows and drive efficiency.
-                    </p>
-                </div>
-                <div class="service-item">
-                    <h3>Data Engineering & Machine Learning</h3>
-                    <p>
-                        Our expertise extends to building data pipelines and machine learning models that ensure seamless integration 
-                        of AI solutions into your existing infrastructure.
-                    </p>
-                </div>
-                <div class="service-item">
-                    <h3>Generative AI Models</h3>
-                    <p>
-                        Implement cutting-edge generative models, such as transformer-based systems, for content creation, text analysis, 
-                        and even financial data simulations.
-                    </p>
-                </div>
+        
+        <div class="content">
+            <h1>AI Freelancer</h1>
+            <p>Offering AI and Machine Learning solutions in the following areas: Reinforcement Learning, Natural Language Processing, Generative Modeling, and more. Click "About Me" to get a more in-depth understanding of my capabilities, as well as beyond that of AI.</p>
+            
+            <div class="buttons">
+                <a href="https://marcel.busschers.uk" target="_blank"><button class="button button1">About Me</button></a>
+                <a href="mailto:marcel@busschers.uk" target="_blank"><button class="button button2">Contact</button></a>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Recent Projects</h2>
-            <div class="project-list">
-                <div class="project-item">
-                    <h3>Forex Market Prediction System</h3>
-                    <p>
-                        Applied reinforcement learning to predict forex market trends and optimize trading strategies. This model forecasts 
-                        the next 5 to 10 candlesticks using historical data and has proven to significantly improve decision-making.
-                    </p>
-                </div>
-                <div class="project-item">
-                    <h3>Generative Chatbot for E-Commerce</h3>
-                    <p>
-                        Developed an AI-powered chatbot to assist online shoppers, helping them find products, answer queries, and complete 
-                        purchases efficiently. This chatbot learns from interactions and constantly improves its performance.
-                    </p>
-                </div>
-                <div class="project-item">
-                    <h3>AI-Powered Market Analytics for SMEs</h3>
-                    <p>
-                        Created an AI-based solution for small and medium enterprises (SMEs) to analyze customer behavior and market trends 
-                        in real-time. This system helps businesses adjust their strategies on-the-fly and stay competitive.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>
-                Ready to implement AI-driven solutions into your business? Get in touch with us to discuss how Busschers AI can help 
-                transform your company's operations and bring cutting-edge AI technology to your team.
-            </p>
-            <p>Email: <a href="mailto:marcel@busschers.uk">marcel@busschers.uk</a></p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>© 2024 Busschers AI. All rights reserved.</p>
-        </div>
-    </footer>
+    <!-- Vanta.js and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+            el: "#vanta-background",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            backgroundColor: 0x151619, // 2299196 in decimal
+            color: 0x5064A0, // 16727937 in decimal
+            points: 10,
+            maxDistance: 20,
+            spacing: 15,
+            showDots: true,
+            backgroundAlpha: 1
+        });
+    </script>
 </body>
 </html>
