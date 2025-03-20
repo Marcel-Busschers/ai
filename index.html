@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busschers AI - Freelancer</title>
     <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
@@ -15,6 +17,9 @@
             overflow-x: hidden;
             display: flex;
             flex-direction: column;
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 
+                 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+                 sans-serif;
         }
 
         .container {
@@ -51,6 +56,35 @@
             margin-right: auto;
             font-size: 20px;
             box-sizing: border-box;
+            background: rgba(255, 255, 255, 0.1); /* Transparent background */
+            backdrop-filter: blur(10px); /* Creates the frosted glass effect */
+            -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+            border-radius: 5px; /* Rounded corners */
+            border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Depth shadow */
+            padding: 30px;
+            margin: 20px auto;
+        }
+
+        .header {
+            text-align: center;
+            margin: 0; /* Remove any margin */
+            padding: 0; /* Remove any padding */
+            width: 500px; /* Match with displayed logo width */
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+            box-sizing: border-box;
+        }
+
+        .header h1 {
+            margin: 0; /* Remove margin from h1 */
+        }
+
+        .header caption {
+            display: block; /* Ensure caption is treated as a block element */
+            margin: 0; /* Remove margin from caption */
+            padding: 0; /* Remove padding from caption */
         }
 
         .buttons {
@@ -66,6 +100,11 @@
             font-size: 16px;
             cursor: pointer;
             transition: transform 0.2s;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         }
 
         .button:hover {
@@ -121,6 +160,19 @@
             .content {
                 width: 100%;
                 padding: 0 1rem; /* Maintains 50px equivalent with rem units */
+                background: rgba(255, 255, 255, 0.1); /* Transparent background */
+                backdrop-filter: blur(10px); /* Creates the frosted glass effect */
+                -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+                border-radius: 5px; /* Rounded corners */
+                border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Depth shadow */
+                padding: 30px;
+                margin: 20px auto;
+            }
+
+            .header {
+                width: 100%;
+                padding: 0 1rem; /* Maintains 50px equivalent with rem units */
             }
         }
 
@@ -139,10 +191,14 @@
         <div class="logo-container">
             <img src="logo.png" alt="Busschers AI Logo" class="logo">
         </div>
+        <div class="header">
+            <h1>Busschers AI</h1>
+            <caption>Freelancer</caption>
+        </div>
         
         <div class="content">
-            <h1>AI Freelancer</h1>
-            <p>Offering AI and Machine Learning solutions in the following areas: Reinforcement Learning, Natural Language Processing, Generative Modeling, and more. Click "About Me" to get a more in-depth understanding of my capabilities, as well as beyond that of AI.</p>
+            
+            <p>Offering AI and Machine Learning solutions in the following areas: Reinforcement Learning, Natural Language Processing, Generative Modeling, and more.</p>
             
             <div class="buttons">
                 <a href="https://marcel.busschers.uk" target="_blank"><button class="button button1">About Me</button></a>
